@@ -1,6 +1,6 @@
 body{
     font-family:  'Kanit', sans-serif;
-     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/source/img/MAHIA-PENINSULA-HSE_1425-web.jpg);
+     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/MAHIA-PENINSULA-HSE_1425-web.jpg);
        -webkit-background-size: cover;
        -moz-background-size:  cover;
        -o-background-size: cover;
