@@ -11,7 +11,7 @@ document.getElementById('close-btn').addEventListener('click',(e) => {
    form.style.display = 'none';
 })
 
-
+//comment
 
 $(function () {
    $("#beforeafter_foto").twentytwenty();
