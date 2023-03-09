@@ -74,7 +74,7 @@ body{
 
 .consultation {
     margin-top: 150px;
-    width: 35%;
+    width: 500px;
     color:#DCDCDC;
     font-size: 25px;
     
@@ -120,7 +120,7 @@ body{
 }
 
 .beforeafter_foto {
-    
+    display: block;
     margin-top: 150px;
     width: 700px;
     height: 600px;
@@ -236,40 +236,54 @@ body{
     width: 100%;
   }
 
-@media (max-width:1600px){
-    .container{
-        max-width: 1400px;
-    }
+
+.burger{
+    display: none;
 }
-  
-@media (max-width:1400px){
-    .container{
-        max-width: 1200px;
+@media (max-width:877px){
+   
+    .nav-menu{
+        display: none;
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+    }
+    #burger{
+        display: block;
+        width: 30px;
+        height: 30px;
+        float: right;
+        background-image: url("/project_garbuz/source/img/icons8-меню-30.png");
+    }
+    .beforeafter_foto{
+        display: none;
+    }
+    .consultation{
+        margin: 0 auto;
+        margin-top: 160px;
+    }
+    .twentytwenty-wrapper{
+        display: none;
     }
 }
 
-@media (max-width:1200px){
-    .container{
-        max-width: 970px;
-    }
+#burger-menu{
+    display: none;
+    background-color: white;
+    padding: 10px;
+    position: absolute;
+    right: 10px;
+    top: 55px;
+    font-size: 20px;
+    border-radius: 25px;
 }
-
-@media (max-width:992px){
-    .container{
-        max-width: 750px;
-    }
-}
-
-@media (max-width:767px){
-    .container{
-        max-width: 500px;
-    }
-}
-
-@media (max-width:575px){
-    .container{
-        max-width: 500px;
-    }
+#burger-menu li{
+    border: 1px solid black;
+    margin: 7px;
+    padding: 2px;
+    border-radius: 25px;
+    text-align: center;
 }
 
 
