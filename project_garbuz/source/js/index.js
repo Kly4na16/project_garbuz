@@ -32,3 +32,50 @@ buyButton.addEventListener('click', () => {
 $(function () {
    $("#beforeafter_foto").twentytwenty();
 });
+
+
+
+const slides = document.querySelectorAll('.slide');
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
+let currentSlide = 0;
+
+// Показати перший слайд
+slides[currentSlide].classList.add('active');
+
+// Функція для переходу до наступного слайда
+function nextSlide() {
+  const slideWidth = slides[currentSlide].clientWidth;
+  slides[currentSlide].style.animation = `slide-out s ease-out`;
+  setTimeout(() => {
+    slides[currentSlide].classList.remove('active');
+    slides[currentSlide].style.animation = '';
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].classList.add('active');
+    slides[currentSlide].style.transform = `translateX(${slideWidth}px)`;
+    setTimeout(() => {
+      slides[currentSlide].style.transform = '';
+    }, 100);
+  }, 300);
+}
+
+// Функція для переходу до попереднього слайда
+function prevSlide() {
+  const slideWidth = slides[currentSlide].clientWidth;
+  slides[currentSlide].style.animation = `slide-out-reverse 0.3s ease-out`;
+  setTimeout(() => {
+    slides[currentSlide].classList.remove('active');
+    slides[currentSlide].style.animation = '';
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    slides[currentSlide].classList.add('active');
+    slides[currentSlide].style.transform = `translateX(-${slideWidth}px)`;
+    setTimeout(() => {
+      slides[currentSlide].style.transform = '';
+    }, 10);
+  }, 300);
+}
+
+// Обробники подій кнопок
+next.addEventListener('click', nextSlide);
+prev.addEventListener('click', prevSlide);
+       

@@ -67,11 +67,11 @@ body{
 
 .welcome-screen{
     display: flex;
-    align-items: center;
+   
     max-width: 1600px;
     margin: 0px auto;
     justify-content: space-between;
-    margin-bottom: 100px;
+    height:897px;
 }
 
 .consultation {
@@ -318,23 +318,7 @@ body{
 }
 
 
-.why-us{
-    
-    
-    max-width: 1400px;
-    display: flex;
-    flex-direction: column;
-     margin: 0 auto;
-     padding-top: 50px;
-     
-   }
-   .why-us-title{
-     font-size: 40px;
-     letter-spacing: 8px;
-     text-align: center;
-     margin: 50px;
-     
-   }
+
    .reasons{
      display: flex;
      justify-content: space-between;
@@ -360,8 +344,8 @@ body{
      font-size: 40px;
      letter-spacing: 8px;
      text-align: center;
-     margin: 50px;
-     padding-top: 50px;
+    padding-top: 25px;
+   
      color: white;
   }
   .story{
@@ -390,6 +374,78 @@ body{
      font-weight: 900;
   }
  
+ 
+  
+  .why-us__title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 50px;
+  }
+  
+  .why-us__list {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .why-us__item {
+    width: calc(33.33% - 30px);
+    background-color: #fff;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+   margin-bottom: 50px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  }
+  .why-us__item-title{
+    font-size: 15px;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+  
+  .why-us__item:hover {
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .why-us__icon {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 
+  }
+.why-us__item-description{
+  letter-spacing: 1px;
+  margin: 5px;
+}
+  
+  
+  .why-us__stats {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+  }
+  
+  .why-us__stat {
+    text-align: center;
+  }
+  
+  .why-us__stat-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+  
+  .why-us__stat-number {
+    font-size: 2rem;
+    color: #00b894;
+    font-weight: bold;
+  }
+
+
+
+
+
 
   .footer-distributed {
     background-color: #292c2f;
