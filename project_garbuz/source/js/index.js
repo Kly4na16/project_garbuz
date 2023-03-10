@@ -12,6 +12,7 @@ document.getElementById('close-btn').addEventListener('click',(e) => {
 })
 
 //comment
+//comment
 const burger = document.getElementById('burger')
 const burgerMenu = document.getElementById('burger-menu')
 
@@ -23,6 +24,10 @@ if(window.screen.width>877){
    burgerMenu.style.display = 'none';
 
 }
+const buyButton = document.getElementById('buy-button');
+buyButton.addEventListener('click', () => {
+   form.style.display = 'flex'
+})
 
 $(function () {
    $("#beforeafter_foto").twentytwenty();
