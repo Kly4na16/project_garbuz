@@ -547,7 +547,7 @@ margin: 30px 5px 5px 5px;
   }
 
   .bgimg{
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ) , url('/project_garbuz/source/img/glxliwjlz80kpj3dvlr2.jpg')  center/cover no-repeat;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ) , url('/img/glxliwjlz80kpj3dvlr2.jpg')  center/cover no-repeat;
     height: 890px;
     width: 100%;
     display: flex;
