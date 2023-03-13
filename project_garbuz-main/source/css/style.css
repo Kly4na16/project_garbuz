@@ -1,10 +1,14 @@
 body{   
     font-family:  'Kanit', sans-serif;   
-    background: url("../img/бекграунд_1.jpg") center/cover no-repeat;
-    min-height: 80%; 
+    background: url("../img/бекграунд_1.jpg") no-repeat;
+    
+    
+    
     background-size: 100% 100%; 
 }
-
+main{
+  width: 100%;
+}
 .header{
     max-width: 1600px;
     margin: 0 auto;
@@ -67,11 +71,12 @@ body{
 
 .welcome-screen{
     display: flex;
-    
+    width: 100%;
     max-width: 1600px;
     margin: 0px auto;
     justify-content: space-between;
     height: 897px;
+    
 }
 
 .consultation {
@@ -242,62 +247,7 @@ body{
 .burger{
     display: none;
 }
-@media (max-width:1195px){
-    .nav-menu{
-        display: none;
-    }
-    .header{
-        display: flex;
-        justify-content: space-between;
-    }
-    #burger{
-        display: block;
-        width: 30px;
-        height: 30px;
-        float: right;
-        background-image: url("/project_garbuz/source/img/icons8-меню-30.png");
-    }
-    .beforeafter_foto{
-        display: none;
-    }
-    .consultation{
-        margin: 0 auto;
-        margin-top: 160px;
-    }
-    .twentytwenty-wrapper{
-        display: none;
-    }
-    .why-us{
-        padding-top: 50px;
-    }
-}
-@media (max-width:877px){
-   
-    .nav-menu{
-        display: none;
-    }
-    .header{
-        display: flex;
-        justify-content: space-between;
-    }
-    #burger{
-        display: block;
-        width: 30px;
-        height: 30px;
-        float: right;
-        background-image: url("/project_garbuz/source/img/icons8-меню-30.png");
-    }
-    .beforeafter_foto{
-        display: none;
-    }
-    .consultation{
-        margin: 0 auto;
-        margin-top: 160px;
-    }
-    .twentytwenty-wrapper{
-        display: none;
-    }
-}
+
 
 #burger-menu{
     display: none;
@@ -328,21 +278,23 @@ body{
 .why-us__list {
   display: flex;
   justify-content: space-between;
-  max-width: 1000px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
 .why-us__item {
-  width: calc(33.33% - 30px);
+  width: 500px;
   background-color: #fff;
   padding: 40px;
+  font-size: 22px;
+  margin: 50px;
   text-align: center;
   border-radius: 10px;
  margin-bottom: 50px;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
 }
 .why-us__item-title{
-  font-size: 15px;
+  font-size: 25px;
   font-weight: 900;
   text-transform: uppercase;
 }
@@ -465,18 +417,7 @@ margin: 30px 5px 5px 5px;
   
   /* Media Queries */
   
-  @media (max-width: 600px) {
-    .footer-distributed .footer-left, .footer-distributed .footer-right {
-      text-align: center;
-    }
-    .footer-distributed .footer-right {
-      float: none;
-      margin: 0 auto 20px;
-    }
-    .footer-distributed .footer-left p.footer-links {
-      line-height: 1.8;
-    }
-  }
+  
 
   .slider {
     position: relative;
@@ -556,7 +497,18 @@ margin: 30px 5px 5px 5px;
   }
 
   .bgimg h2{
-    width: 35%;
+    width: 55%;
+    color: white;
+    font-size: 27px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 40px;
+    text-align: center;
+
+  }
+  .bgimg h3{
+    text-align: center;
+    width: 55%;
     color: white;
     font-size: 27px;
     font-weight: 600;
@@ -568,6 +520,7 @@ margin: 30px 5px 5px 5px;
   .bgimg button {
     border: 2px solid white;
     margin-top: 50px;
+    width: 350px;
     background: none;
     color: #ffffff;
     border-radius: 15px ;
@@ -605,65 +558,8 @@ margin: 30px 5px 5px 5px;
   }
 
   	
-  @media (max-width:1195px){
-    .nav-menu{
-        display: none;
-    }
-    .header{
-        display: flex;
-        justify-content: space-between;
-    }
-    #burger{
-        display: block;
-        width: 30px;
-        height: 30px;
-        float: right;
-        background-image: url("../img/icons8-меню-30.png");
-    }
-    .beforeafter_foto{
-        display: none;
-    }
-    .consultation{
-        margin: 0 auto;
-        margin-top: 160px;
-    }
-    .twentytwenty-wrapper{
-        display: none;
-    }
-    .why-us{
-        padding-top: 50px;
-    }
-    .bgimg h2{
-      height: 90%;
-    }
-}
-@media (max-width:877px){
-   
-    .nav-menu{
-        display: none;
-    }
-    .header{
-        display: flex;
-        justify-content: space-between;
-    }
-    #burger{
-        display: block;
-        width: 30px;
-        height: 30px;
-        float: right;
-        background-image: url("../img/icons8-меню-30.png");
-    }
-    .beforeafter_foto{
-        display: none;
-    }
-    .consultation{
-        margin: 0 auto;
-        margin-top: 160px;
-    }
-    .twentytwenty-wrapper{
-        display: none;
-    }
-}
+ 
+
 .footer-distributed {
     background-color: #292c2f;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -737,15 +633,4 @@ margin: 30px 5px 5px 5px;
   
   /* Media Queries */
   
-  @media (max-width: 600px) {
-    .footer-distributed .footer-left, .footer-distributed .footer-right {
-      text-align: center;
-    }
-    .footer-distributed .footer-right {
-      float: none;
-      margin: 0 auto 20px;
-    }
-    .footer-distributed .footer-left p.footer-links {
-      line-height: 1.8;
-    }
-  }
+  
