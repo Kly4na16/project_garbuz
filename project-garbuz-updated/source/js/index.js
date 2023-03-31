@@ -93,3 +93,34 @@ $(document).ready(function () {
 
    });
 });
+
+const counters = document.querySelectorAll('.why-us__stat-number');
+const duration = 1500;
+
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const target = entry.target;
+      const countTo = parseInt(target.getAttribute('data-count'));
+      const stepTime = Math.abs(Math.floor(duration / countTo));
+      let currentCount = 0;
+      const isAnimated = target.getAttribute('data-animated') === 'true';
+      if (!isAnimated) {
+        target.style.setProperty('--count', countTo);
+        const timer = setInterval(() => {
+          currentCount += (countTo === 3000) ? 30 : 1;
+          target.textContent = currentCount.toLocaleString();
+          if (currentCount >= countTo) {
+            clearInterval(timer);
+            target.textContent = countTo.toLocaleString();
+            target.setAttribute('data-animated', 'true');
+          }
+        }, Math.max(stepTime, 45));
+      }
+    }
+  });
+}, { threshold: [0.1] });
+
+counters.forEach(counter => {
+  observer.observe(counter);
+});
