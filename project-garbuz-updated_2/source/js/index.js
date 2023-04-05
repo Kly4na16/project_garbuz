@@ -67,13 +67,17 @@ $(document).ready(function(){
 			{
 				breakpoint: 768,
 				settings: {
-					slidesToShow:2
+               speed:2000,
+					slidesToShow:2,
+               slidesToScroll:1
 				}
 			},
 			{
 				breakpoint: 550,
 				settings: {
-					slidesToShow:1
+               speed:1000,
+					slidesToShow:1,
+               slidesToScroll:1
 				}
 			}
 		]
