@@ -128,3 +128,37 @@ const observer = new IntersectionObserver((entries, observer) => {
 counters.forEach(counter => {
    observer.observe(counter);
 });
+
+// выбираем все якорные ссылки на странице
+const links = document.querySelectorAll('a[href^="#"]');
+
+// добавляем обработчик события клика на каждую ссылку
+links.forEach(link => {
+   link.addEventListener('click', function (e) {
+      // отменяем стандартное поведение ссылки
+      e.preventDefault();
+
+      // получаем значение атрибута href ссылки
+      const href = this.getAttribute('href');
+
+      // проверяем, что ссылка действительно якорная
+      if (href.match(/^#[a-zA-Z0-9_-]+$/)) {
+
+         // получаем элемент, к которому нужно прокрутить страницу
+         const target = document.querySelector(href);
+
+         // проверяем, что элемент найден на странице
+         if (target) {
+
+            // вычисляем положение элемента на странице
+            const top = target.getBoundingClientRect().top + window.pageYOffset;
+
+            // плавно прокручиваем страницу до элемента
+            window.scrollTo({
+               top,
+               behavior: 'smooth'
+            });
+         }
+      }
+   });
+});
