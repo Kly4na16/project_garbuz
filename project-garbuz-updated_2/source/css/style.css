@@ -7,7 +7,8 @@ main {
 }
 
 .header {
-    background: url("../img/бекграунд_1.jpg") no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../img/бекграунд_2.jpg") no-repeat;
     background-size: 100% 100%;
 }
 
@@ -72,6 +73,7 @@ main {
     width: 100%;
     margin: 150px auto;
     justify-content: space-evenly;
+    margin-bottom: 100px;
 }
 
 .consultation {
@@ -108,7 +110,7 @@ main {
     font-size: 18px;
     text-transform: uppercase;
     height: 60px;
-    color: #1d4f96;
+    color: #3c68a5;
     background-color: white;
     border-radius: 100px;
 
@@ -116,7 +118,7 @@ main {
 }
 
 .application:hover {
-    background-color: #1d4f96;
+    background-color: #5d85be;
     color: white;
 }
 
@@ -798,7 +800,7 @@ main {
 
 .variants {
     margin: 0 auto;
-    max-width: 1400px;
+    max-width: 100%;
     margin-bottom: 50px;
 }
 
@@ -863,8 +865,8 @@ h2 {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
-    max-width: 600px;
-    min-height: 400px;
+    max-width: 550px;
+    min-height: 450px;
 }
 
 .plan-title {
@@ -904,7 +906,7 @@ h2 {
             rgba(72, 97, 133, 1) 100%);
     border: none;
     border-radius: 5px;
-    color: #fff;
+    color: white;
     display: inline-block;
     font-size: 18px;
     margin-top: 20px;
