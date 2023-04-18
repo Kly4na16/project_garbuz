@@ -32,7 +32,7 @@ main {
 
 .nav-menu {
     display: flex;
-    gap: 70px;
+    gap: 60px;
 }
 
 .nav-menu a {
@@ -265,6 +265,13 @@ main {
     padding: 2px;
     border-radius: 25px;
     text-align: center;
+    transition:  0.3s ease;
+    color: white;
+}
+
+#burger-menu li:hover {
+    color: white;
+    background-color: #32425b;
 }
 
 .why-us__title {
@@ -441,6 +448,7 @@ main {
             rgba(72, 97, 133, 1) 100%);
 
     padding: 30px;
+    box-shadow: 0px 2px 25px #797878;
 }
 
 .cases-container p {
@@ -802,6 +810,7 @@ main {
     margin: 0 auto;
     max-width: 100%;
     margin-bottom: 50px;
+
 }
 
 .facku {
@@ -858,6 +867,8 @@ h2 {
     transition: 0.7s;
 }
 
+
+
 .plan {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -866,7 +877,7 @@ h2 {
     padding: 20px;
     text-align: center;
     max-width: 550px;
-    min-height: 450px;
+    min-height: 470px;
 }
 
 .plan-title {
@@ -957,4 +968,40 @@ tr:hover {
 
 .option-checkbox {
     margin-right: 10px;
+}
+
+.concept {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("../img/concept_bg.jpg") center/cover no-repeat;
+    height: 890px;
+    width: 100%;
+    display: flex;
+
+
+    flex-direction: column;
+
+}
+
+.concept h2 {
+    padding-top: 12%;
+    width: 55%;
+    color: white;
+    font-size: 57px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 40px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.concept p {
+    text-align: center;
+    width: 55%;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 40px;
+    margin: 0 auto;
+    margin-top: 4%;
 }
